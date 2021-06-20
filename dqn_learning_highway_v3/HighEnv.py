@@ -19,16 +19,16 @@ if 'SUMO_HOME' in os.environ:
 else:
     sys.exit("please declare environment variable 'SUMO_HOME'")
 
-if ENV == 0:
+if ENV == 2:
     sumoBinary = "/usr/bin/sumo"
     sumoconfig = "2lane_simulation.sumocfg"
 elif ENV == 1:
-    sumoBinary = os.path.normpath(r"W:\Program Files (x86)\Eclipse\Sumo\bin\sumo.exe")
+    sumoBinary = os.path.normpath(r"C:\Program Files (x86)\Eclipse\Sumo\bin\sumo.exe")
     # sumoconfig = os.path.normpath(r"W:\My Documents\McMaster\Thesis Project\model_analysis\2lane_simulation.sumocfg") 
     path = (os.path.dirname(os.path.abspath(__file__)))
     sumoconfig = path + r"\2lane_simulation.sumocfg"  
 else:
-    sumoBinary = os.path.normpath(r"W:\Program Files (x86)\Eclipse\Sumo\bin\sumo-gui.exe")
+    sumoBinary = os.path.normpath(r"C:\Program Files (x86)\Eclipse\Sumo\bin\sumo-gui.exe")
     path = (os.path.dirname(os.path.abspath(__file__)))
     sumoconfig = path + r"\2lane_simulation.sumocfg"   
 
