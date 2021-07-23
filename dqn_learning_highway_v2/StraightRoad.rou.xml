@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="Auto" length="3.00" minGap="3.00" maxSpeed="55.55" color="blue" accel="30" decel="30" tau="1" sigma="0" speedFactor="1.2"/>
-    <vType id="FastCar" length="3.00" minGap="3.00" color="magenta" lcKeepRight="100" accel="30" decel="30" tau="3" sigma="0.5"/>
-    <vType id="SlowCar" length="3.00" minGap="3.00" maxSpeed="11.10" color="red" accel="30" decel="30" tau="3" sigma="0.5"/>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="Auto" length="3.00" minGap="3.00" maxSpeed="55.55" color="blue" 
+           accel="30" decel="30" tau="1" sigma="0" speedFactor="1.2"/>
+    <vType id="FastCar" length="3.00" minGap="3.00" color="magenta" 
+           lcKeepRight="100" accel="30" decel="30" tau="3" sigma="0.5"/>
+    <vType id="SlowCar" length="3.00" minGap="3.00" maxSpeed="11.10" 
+           color="red" accel="30" decel="30" tau="3" sigma="0.5"/>
     <route edges="Lane" color="yellow" id="straight"/>
-    <flow id="FastCar" type="FastCar" begin="0.00" route="straight" end="200.00" probability="0.01"/>
-    <flow id="SlowCar" type="SlowCar" begin="0.00" color="red" route="straight" end="200.00" probability="0.1"/>
-    <vehicle id="Auto" type="Auto" depart="60.00" color="blue" route="straight" departSpeed="11.1"/>
+    <flow id="FastCar" type="FastCar" begin="0.00" route="straight"
+          end="200.00" probability="0.01"/>
+    <flow id="SlowCar" type="SlowCar" begin="0.00" color="red" 
+          route="straight" end="200.00" probability="0.1"/>
+    <vehicle id="Auto" type="Auto" depart="60.00" color="blue" 
+             route="straight" departSpeed="11.1"/>
 </routes>
