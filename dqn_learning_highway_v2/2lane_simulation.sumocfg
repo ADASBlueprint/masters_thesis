@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	       xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
-
     <input>
         <net-file value="2Lane_StraightRoad.net.xml"/>
         <route-files value="StraightRoad.rou.xml"/>
     </input>
-	
-	<time>
+    <time>
         <begin value="0"/>
-		<step-length value="1.0"/>
+	<step-length value="1.0"/>
     </time>
-	
-	<processing>
+    <processing>
         <collision.action value="remove"/>
         <collision.mingap-factor value="0"/>
+	<lanechange.overtake-right value="false"/>
     </processing>
-	
-	<report>
-        <verbose value="false"/>
-        <no-step-log value="true"/>
-    </report>
-	
-	<gui_only>
+    <gui_only>
         <quit-on-end value="true"/>
         <start value="true"/>
-		<scale value="1.0"/>
+	<scale value="1.0"/>
     </gui_only>
-	
-	<random_numberType>
+    <random_numberType>
         <random value="true"/>
     </random_numberType>
-	
-	<processing>
-        <lanechange.overtake-right value="false"/>
-    </processing>
-
 </configuration>
